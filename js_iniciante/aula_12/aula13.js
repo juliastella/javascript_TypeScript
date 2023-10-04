@@ -1,4 +1,4 @@
-let umaString = 'Meu valor';
+  let umaString = 'Meu valor';
 
 // length
 
