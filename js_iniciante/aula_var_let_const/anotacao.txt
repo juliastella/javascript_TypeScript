@@ -1,0 +1,9 @@
+# let #
+
+let tem escorpo de bloco {... bloco}
+
+
+
+# var #
+
+Tem escorpo de função
