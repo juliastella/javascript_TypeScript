@@ -1,0 +1,1 @@
+Quando queremos pegar o resto de um array, chamamos de rest operaion.
