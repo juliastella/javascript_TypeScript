@@ -19,3 +19,6 @@ const [um, , tres, , cinco, , sete] = numeros;
 // console.log(resto);
 
 console.log(um, tres, cinco);
+
+
+let siteBaseUrl = window.location.origin
