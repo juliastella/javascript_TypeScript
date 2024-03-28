@@ -53,3 +53,8 @@ form button{
 form button:hover {
     background: var(--primary-color-dacker);
 }
+
+.paragrafo-resultado {
+    background: green;
+    padding: 10px 20px;
+}

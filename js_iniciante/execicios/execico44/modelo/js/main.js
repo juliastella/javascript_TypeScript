@@ -1,9 +1,26 @@
-function imc(peso, altura) {
-    return peso / (altura*altura)
+const form = document.querySelector('#formulario')
+
+// function imc(peso, altura) {
+//     resultado = peso / (altura * altura);
+//     return resultado;
+//   }
+
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const inputPeso = e.target.querySelector('#peso')
+})
+
+function criaP() {
+    const p = document.createElement('p');
+    p.classList.add('paragrafo-resultado');
+    return
 }
 
-const peso = document.getElementById('peso');
-const altura = document.getElementById('altura');
 
+function setResultado(msg) {
+    const resultado = document.querySelector('#resultado');
+    resultado.innerHTML = '';
 
-console.log(imc(peso,altura));
+    // para criar um paragrafo
+    const mostraP = criaP();
+}

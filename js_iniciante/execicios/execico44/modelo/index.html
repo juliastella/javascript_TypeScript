@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Modelo</title>
-</head>
-<body>
-    <section class="container" >
-        <h1>Calcule seu IMC</h1>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Calcule seu IMC</h1>
 
-        <form action="" id="formulario" method="post"> 
-            <label for="peso">Peso</label>
-            <input type="text" id="peso" name="peso">
+      <form action="/" id="formulario">
+        <label for="peso">Peso</label>
+        <input type="text" id="peso" name="peso" />
 
-            <label for="altura">Altura</label>
-            <input type="text" id="altura" name="altura">
+        <label for="altura">Altura</label>
+        <input type="text" id="altura" name="altura" />
 
-            <button type="submit">Enviar</button>
-        </form>
-      </section>
+        <button type="submit">Enviar</button>
+      </form>
 
-    <script src="/js_iniciante/modelo/js/main.js"></script>
-</body>
+      <div id="resultado"></div>
+    </section>
+
+    <script href="./js/main.js"></script>
+  </body>
 </html>
