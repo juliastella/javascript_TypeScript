@@ -1,5 +1,8 @@
 /**
  * FOR in
+ * 
+ * 
+ * Retorna o índice ou chave (string, array ou obejtos)
  */
 
 const frutas = ['maçã', 'pera', 'uva'];

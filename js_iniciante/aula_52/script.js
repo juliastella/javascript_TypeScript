@@ -1,5 +1,7 @@
 /**
  * FOR
+ * 
+ * Geralmente com iteráveis (arrayou ou strings)
  */
 
 // Exemplo para ver se é impar ou par
