@@ -10,7 +10,8 @@
 
 function soma(x , y) {
     if (typeof x !== 'number' || typeof y !== 'number') {
-        throw('x e y precisa ser números'); // colocando um erro se a entrada passar por essa verificação.
+        throw new ReferenceError('x e y precisa ser números'); // colocando um erro se a entrada passar por essa verificação.
+        // nem todas as vezes precisa ter essa estrutura de "throw new <class de erro>", pode ser só throw ("<texto>")
         // se quisemos que o erro fique com a estrutura que normalmente vem por padrão do JS, basta colocar o new <class de erro >
         // a class de erro você pode criala ou seja, colocar o nome que você quiser ou pegar classes já existentes na linguagem. 
         // as classes de erro são nada mais que construtores no JS.
