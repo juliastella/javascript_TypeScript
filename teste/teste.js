@@ -1,0 +1,1 @@
+let paragrafo = document.getElementById("p")
