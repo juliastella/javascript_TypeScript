@@ -29,7 +29,7 @@ function criaCalculadora() {
         let conta = this.display.value;
   
         try {
-          conta = eval(conta);
+          conta = eval(conta); //tem que ter cuidado com a função eval.
   
           if(!conta) {
             alert('Conta inválida');
