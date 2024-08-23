@@ -1,6 +1,6 @@
 // nova forma de construir array
 
-const nomes = new Array('Eduardo', 'Maria', 'J')
+const nomes = new Array('Eduardo', 'Maria', 'J');
 //const novo = nomes; // se eu mudar novo, eu também mudo nomes
 const novo = [...nomes]; // o que eu faço em novo não vai alterar nomes
 // teriocamente eu fiz uma copia de nomes e coloquei em novo
