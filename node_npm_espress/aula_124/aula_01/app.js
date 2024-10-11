@@ -1,3 +1,5 @@
+// Aula 1 mod1
+
 // require é requere esse aquivo, buscar ele
 // ele viro um objeto normal
 // const mod1 = require('./mod1').falaNome;
@@ -18,3 +20,5 @@ const {Pessoa} = require('./mod1');
 
 const p1 = new Pessoa('Luiz');
 console.log(p1);
+
+
