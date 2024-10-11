@@ -1,0 +1,6 @@
+Quando temos esse "^" no inicio da vesão de qualquer pacote, siginifica que ele
+pode ser atualizado. Por exemplo: "express": "^4.21.1"
+
+Se quiser manter uma versão, só basta dar esse comando:
+
+npm install <nome do pacote> -e
