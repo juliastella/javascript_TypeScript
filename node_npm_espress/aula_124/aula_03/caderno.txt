@@ -4,7 +4,7 @@ pode ser atualizado. Por exemplo: "express": "^4.21.1"
 Se quiser uma versão exata, só basta colocar a fleg "-e". Com isso essa versão
 sera atualizada:
     
-    npm install <nome do pacote> -e
+    npm install <nome do pacote> -E
 
 Se você quiser mudar o pacote para a area dev:
 
@@ -13,3 +13,31 @@ Se você quiser mudar o pacote para a area dev:
 A mesma coisa de quiser mudar para o ambiente de produção:
 
 npm install express --save-prod
+
+Quando quero mudar a versão:
+
+    npm install <nome do pacote>@<número da versa>
+
+Lembrando que podemos adicionar o "-E" no final para ficar com a versão fixa.
+
+Quando queremos atualizar para a ultima versão:
+
+    npm update
+
+Para desistalar, basta:
+
+    npm uninstall <nome do pacote>
+
+Para listar todos os pacotes:
+
+    npm ls
+
+Posso também diminuir a profundidade das pastas:
+  
+  npm ls --depth=0
+
+  O "0" só vai mostrar o que eu instalei. O "1" vai colocar uma subnivel a mais.
+
+Para ver pacotes que estão desatualizados:
+
+    npm outdated
