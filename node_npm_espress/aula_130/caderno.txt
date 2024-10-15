@@ -1,0 +1,23 @@
+O express ajudar com rotas em nossa aplicação web
+
+
+                         Criar   ler   atualizar apagar
+                 CRUD -> CREATE, READ, UPDATE, DELETE
+ele tem esses metodos    POST     GET  PUT     DELETE
+
+http://meusite.com/ <- GET -> Entregue a página /
+http://meusite.com/sobre <- GET -> Entregue a página /sobre
+http://meusite.com/contato <- GET -> Entregue a página /contato
+
+
+
+Primeiro passamos a rota, requisição e resposta,  
+
+    app.get('/', (req, res) => {})
+
+Requisição: é o que estou pendido, normalmente o usuario vai pedir uma página.
+Resposta: é o que vai ser mandado para o servidor. 
+
+Para rodar o servdor:
+
+    node server.js
