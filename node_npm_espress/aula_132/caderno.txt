@@ -1,0 +1,25 @@
+Para rodar o servdor:
+
+    node server.js
+
+Para deiar o servdor com salvamento automatico:
+
+    npm install nodemon --save-dev
+
+    Aqui irá baixar todas a dependencias do nodemon.
+
+Para rodar o nodemon:
+
+    npx nodemon <o arquivo selecionado> 
+
+Para mudar comando de inialização do nodemon, é necessario ir no arquivo package.json
+e mudar a linha:
+
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js" 
+
+    podemos escrever na linhfa do start o que desejamos.
+
+E agora o comando é:
+    npm start
