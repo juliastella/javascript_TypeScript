@@ -1,0 +1,45 @@
+    Temos que mudar a estutura dos arquivos. Principalmente na separação 
+do front end do back.
+
+    Para isso acontecer temos que criar a pasta de frontend com principalmente
+o arquivos main.js a pasta assents. Além disso, precisamos modificar o
+arquivo index.ejs da pasta views:
+
+
+    <section class="container">
+        <h1>Lorem ipsum dolor sit amet</h1>
+    </section>
+
+    <script src="./assets/js/bundle.js"></script>
+
+    Na pasta pubic adicionaremos a pasta assets -> js, com dois arquivos bundles e 
+blundle.js.map
+
+
+No arquivo package.json, teremos que adicionar as depences do webpack e outros:
+
+    "dependencies": {
+    "core-js": "^3.3.2",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "babel-loader": "^8.4.1",
+    "css-loader": "^7.1.2",
+    "nodemon": "^3.1.7",
+    "regenerator-runtime": "^0.14.1",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  }
+
+    Como também no script para ignora a pasta frontend e pubic. Além de adicionar 
+a linha do webpack:
+
+    "start": "nodemon server.js --ignore public --ignore frontend",
+    "dev": "webpack -w"
+
+Agora precisamos adicionar o arquivo do webpack.config.js
