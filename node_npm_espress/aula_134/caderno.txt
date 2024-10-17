@@ -10,9 +10,22 @@ No routes.js faremos:
 
 Agora no arquivo de serve.js: criaremos a rota para a pasta de views:
 
-    app.set('views', path(__dirname, 'src', 'views'));
+    app.set('views', path.resolve(__dirname, 'src', 'views'));
 
 Como também a engine, a que mais se aproxima do html é ejs:
 
     app.set('view engine', 'ejs'); 
+
+    Com isso, precisamos instalar o ejs:
+
+    npm i ejs
+
+    Na pasta de views criaremos arquivos com o .ejs que é um super html. Mudamos a chamada 
+no homeController.js:
+    
+ exports.paginaInicial = (req, res) => {
+    res.render('index');
+};   
+
+    agora passamos o arquivo que criamos dentro o views
 
