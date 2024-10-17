@@ -1,0 +1,9 @@
+Iremos usa nessa aula o mvp full
+
+Será necessario o a criação do arquivo de rotas.js e pasta chamada de controllrs.
+Para cada nova rota é necessario criar uma arquivo dentro da pasta controllrs.
+
+Depois da criaçãodo arquivo, será necessario colocar o caminho dele no arquivo de routes.js
+desta forma:
+
+    const <nome do arquivo ou outro> = require('<caminho do arquivo>'); 
