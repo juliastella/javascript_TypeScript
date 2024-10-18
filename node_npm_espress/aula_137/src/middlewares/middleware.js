@@ -1,3 +1,7 @@
 module.exports = (req, res, next) => {
-    console.log();
+    console.log("Global");
 };
+
+// sempre chama o next
+
+next()
