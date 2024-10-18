@@ -1,0 +1,12 @@
+    Middleware no express é uma função com clico de vida das requisições e resposta do HTTP.  
+por exemplo:
+
+    function teste(request, res, next) {
+        res.write("ola");
+    }
+
+    export default teste;
+
+    request = com propriedades para acessa dados do lado do cliente e requisições HTTP.
+    response = metodo para enviar dados para o lado do cliente por meio do http
+    next = é uma função que diz para continuar com o proximo middleware da pilha. 
