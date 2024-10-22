@@ -3,5 +3,6 @@ exports.paginaInicial = (req, res) => {
 };
 
 exports.trataPost = (req, res) => {
-    res.send('Ei, sou sua nova rota de Post')
+    res.send(req.body);
+    return;
 };

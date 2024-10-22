@@ -1,7 +1,6 @@
-module.exports = (req, res, next) => {
-    console.log("Global");
-};
+exports.middlewareGlobal = (req, res, next) => {
 
 // sempre chama o next
+    next();
+};
 
-next()

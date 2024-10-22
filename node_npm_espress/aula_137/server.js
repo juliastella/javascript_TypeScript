@@ -5,7 +5,7 @@ const path = require('path');
 
 // rota do middlewares 
 
-const meuMiddleware = require('./src/middlewares/middleware');
+const {middlewareGlobal} = require('./src/middlewares/middleware');
 
 app.use(express.urlencoded({extended: true}));
 
@@ -15,7 +15,7 @@ app.set('views', path.resolve(__dirname, 'src', 'views'));
 app.set('view engine', 'ejs'); 
 
 // se eu quiser chamar o meu middleware em todo o sistema
-app.use(meuMiddleware);
+app.use(middlewareGlobal);
 app.use(routes);
 
 
