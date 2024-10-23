@@ -1,0 +1,28 @@
+Vamos usar com aplicações de desenvolvimento:
+
+  npm i eslint babel-eslint --save-dev
+
+
+Agora precisamos colocar a extensão do ESlint no vsCode.
+Depois de instalada, vamos colocar o:
+
+  npx eslint --init
+
+Colocar essa configuração enquanto esta rodando no terminal
+o comando acima:
+
+  ✔ How would you like to use ESLint? · problems
+  ✔ What type of modules does your project use? · esm
+  ✔ Which framework does your project use? · react
+  ✔ Does your project use TypeScript? · javascript
+  ✔ Where does your code run? · browser
+  The config that you've selected requires the following dependencies:
+
+  eslint, globals, @eslint/js, eslint-plugin-react
+  ✔ Would you like to install them now? · No / Yes
+  ✔ Which package manager do you want to use? · npm
+
+
+O componente fragmente é esse: <>.
+As class no html eram passadas como "class" na tag
+agora ela será chamada de  "className"
