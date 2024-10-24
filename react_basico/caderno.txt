@@ -26,3 +26,11 @@ o comando acima:
 O componente fragmente é esse: <>.
 As class no html eram passadas como "class" na tag
 agora ela será chamada de  "className"
+
+Existe a biblioteca de icones do react. Basta dar os comandos:
+
+  npm i react-icons
+
+Depois é somente importa no arquivo do componente.
+
+  import {<nome do componente>} from 'react-icons/<Estilo do icone especifico>'
