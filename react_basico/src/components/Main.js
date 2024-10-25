@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // icones
-import { FaPlus, FaWindowClose, FaEdit } from 'react-icons/fa';
+import Form from "./form"; // Certifique-se de que o caminho está correto
+import Tarefas from "./Tarefas";
 import './Main.css';
 
 export default class Main extends Component {
@@ -10,21 +11,16 @@ export default class Main extends Component {
     index: -1,
   };
 
-  componentDidMount(){ // vai ser executa apenas uma vez quando o
+  componentDidMount() {
     const tarefas = JSON.parse(localStorage.getItem('tarefas'));
-
     if (!tarefas) return;
-
     this.setState({tarefas});
   }
 
-  componentDidUpdate(prevProps, prevState){
+  componentDidUpdate(prevProps, prevState) {
     const { tarefas } = this.state;
-
     if (tarefas === prevState.tarefas) return;
-
     localStorage.setItem('tarefas', JSON.stringify(tarefas));
-
   }
 
   handleSubmit = (e) => {
@@ -32,7 +28,6 @@ export default class Main extends Component {
     const { tarefas, index } = this.state;
     let { novaTarefa } = this.state;
     novaTarefa = novaTarefa.trim();
-
     if (novaTarefa === '' || tarefas.indexOf(novaTarefa) !== -1) return; // Verifica se a tarefa já existe
 
     const novasTarefas = [...tarefas];
@@ -79,28 +74,20 @@ export default class Main extends Component {
     const { novaTarefa, tarefas } = this.state;
     return (
       <div className="main">
+
         <h1>Lista de tarefas</h1>
-        <form onSubmit={this.handleSubmit} action="#" className="form">
-          <input
-            onChange={this.handleChange}
-            type="text"
-            value={novaTarefa}
-          />
-          <button type="submit">
-            <FaPlus />
-          </button>
-        </form>
-        <ul className="tarefas">
-          {tarefas.map((tarefa, index) => (
-            <li key={tarefa}>
-              {tarefa}
-              <span>
-                <FaEdit onClick={() => this.handleEdit(index)} className="edit" />
-                <FaWindowClose onClick={() => this.handleDelete(index)} className="delete" />
-              </span>
-            </li>
-          ))}
-        </ul>
+
+        <Form
+          handleSubmit={this.handleSubmit}
+          handleChange={this.handleChange}
+          novaTarefa={novaTarefa}
+        />
+        <Tarefas
+          tarefas={tarefas}
+          handleDelete={this.handleDelete}
+          handleEdit={this.handleEdit}
+        />
+
       </div>
     );
   }

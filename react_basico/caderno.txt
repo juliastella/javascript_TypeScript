@@ -34,3 +34,15 @@ Existe a biblioteca de icones do react. Basta dar os comandos:
 Depois é somente importa no arquivo do componente.
 
   import {<nome do componente>} from 'react-icons/<Estilo do icone especifico>'
+
+
+----------Separação de componente----------
+
+Na separação do componente de form, sera necessaria a instalação de mais uma biblioteca.
+
+  npm i prop-types
+
+  Depois importamos ele no arquivo de form que vamos auterar:
+
+    import PropTypes from "prop-types";
+
