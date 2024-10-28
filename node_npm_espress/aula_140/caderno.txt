@@ -1,0 +1,23 @@
+Nessa aula precisaremos instalar alguns pacotes:
+
+
+    Para variaveis de ambiente:
+     
+     npm install dotenv
+    
+    Para validação e conexão com a base de dados:
+     
+     npm install mongoose
+     
+
+Vamos iniciar a nossa conexão com o banco de dados. Vamos chamar o mongoose para iniciar a conexão com o mongoDB
+    
+    const mongoose = require('mongoose');
+
+Para não passamos a url de conexão do nosso banco de dados direto no arquivo e posteriomente ficar disponivel para qualque
+pessoa, usaremos o pacote que instalamos do env.
+    Para isso iremos criar na raiz um arquivo .env, nele faremos variaveis e colocamos nelas informações com sigili.
+
+    CONNECTIONSTRING=<url do mongodb>
+
+    
