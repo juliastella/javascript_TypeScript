@@ -20,4 +20,4 @@ pessoa, usaremos o pacote que instalamos do env.
 
     CONNECTIONSTRING=<url do mongodb>
 
-    
+Criação da pasta models para fazer as regras que os dados serão enviados
