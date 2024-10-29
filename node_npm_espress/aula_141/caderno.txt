@@ -1,0 +1,15 @@
+Nessa aula precisaremos instalar alguns pacotes:
+
+    
+    Esses pacotes juntos melhoram a experiência do usuário, gerenciando sessões e mensagens.
+    
+        npm i express-session connect-mongo connect-flash
+
+    express-session: Gerencia sessões de usuário em sua aplicação Express.
+
+    connect-mongo: Armazena sessões no MongoDB para persistência.
+
+    connect-flash: Mostra mensagens de flash temporárias (como notificações).
+
+   
+     
