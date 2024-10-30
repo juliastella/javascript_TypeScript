@@ -1,0 +1,18 @@
+Documentação do ejs
+
+    https://ejs.co/
+ 
+     
+    Includes são separações de codigo e transformados em arquivos,
+e dentro arquivo principal, será necessario colocar a chamada para os arquivos include
+no inicio:
+
+    <%- include('includes/<nome do arquivo>');%>
+
+    Sintaxe do include:
+
+    <% Controle de fluxo (if, for...) %>
+    <%= Imprime escapando caracteres %>
+    <%- Imprime sem escapar caracteres %>
+    <%# Comentário %>
+    <%- include('CAMINHO/ARQUIVO'); %>
