@@ -1,0 +1,15 @@
+Praticas de segurança
+
+    O helmet é um middleware de segurança para Express que ajuda a proteger suas 
+aplicações definindo vários cabeçalhos HTTP.
+
+    A instalação:
+
+        npm i helmet
+
+    CSRF (Cross-Site Request Forgery) é um tipo de ataque que força um usuário a executar 
+ações não intencionais em um aplicativo onde está autenticado.
+
+    A instalação:
+
+        npm i csurf
