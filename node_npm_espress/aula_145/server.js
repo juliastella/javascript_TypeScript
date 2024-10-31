@@ -11,12 +11,12 @@ mongoose.connect(process.env.CONNECTIONSTRING, { useNewUrlParser: true, useUnifi
 }).catch(e => console.log(e));
 
 const session = require('express-session');
-const MongoStore = require('connect-mongo'); // Correção da importação
-const flash = require('connect-flash');
+const MongoStore = require('connect-mongo'); // faz com que as sessões sejam salvas na base de dados
+const flash = require('connect-flash'); // são mensagens auto destrutivas, que vão sair da base de dados 
 const routes = require('./routes');
 const path = require('path');
 const helmet = require('helmet');
-const csrf = require('csurf');
+const csrf = require('csurf'); // Segurança: nenhum site externo consegue enviar coisas para dentro da nossa aplicação
 
 // rota do middlewares 
 const { middlewareGlobal, checkCsrfError, csrfMiddleware} = require('./src/middlewares/middleware');
