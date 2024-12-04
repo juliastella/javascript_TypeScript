@@ -1,5 +1,4 @@
 const path = require('path'); // CommonJS padrão do Node
-
 module.exports = {
     mode: 'development', // Modo correto para desenvolvimento
     entry: './src/index.js',

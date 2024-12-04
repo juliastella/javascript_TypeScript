@@ -1,0 +1,6 @@
+    A pasta public vai ser a de conteúdo estatico, com a criação dessa página
+será necessario colocar o caminho dela no server.js.
+
+    app.use(express.static(path.resolve(__dirname, 'public')));
+
+Necessario colocar o static, para lembrar que a pasta é statica.

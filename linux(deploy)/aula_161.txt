@@ -1,0 +1,16 @@
+Ligação com a cloud do Google
+
+Para cria uma chave SSH:
+
+    ssh-keygen -f ~/.ssh/cursojs -t rsa -b 4096
+
+    Para visualiza se foi criado:
+
+        ls ~/.ssh/curso*
+    
+    Para pegar a chave publica:
+
+        cat <caminho da chave publica>
+
+Para fazer a Ligação, é necessaria ter o username é o ip externo:
+    ssh <username>@<ip externo> 

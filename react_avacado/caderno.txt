@@ -1,0 +1,5 @@
+Vamos usar com aplicações de desenvolvimento:
+
+  Iremos instalar o helmet
+
+    npm i cors helmet
