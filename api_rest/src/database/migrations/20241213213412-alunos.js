@@ -12,45 +12,52 @@ module.exports = {
         primaryKey: true,
       },
 
-      sobrenome:{
+      nome: {
         type: Sequelize.STRING,
         allowNull: false,
       },
 
-      email:{
+      sobrenome: {
         type: Sequelize.STRING,
         allowNull: false,
       },
 
-      idade:{
+      email: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+
+      idade: {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
 
-      peso:{
+      peso: {
         type: Sequelize.FLOAT,
         allowNull: false,
       },
 
-      altura:{
+      altura: {
         type: Sequelize.FLOAT,
         allowNull: false,
       },
 
-      created_at:{
-        type: Sequelize.FLOAT,
-        allowNull: false,
-      },
-      updated_at:{
+      created_at: {
         type: Sequelize.DATE,
         allowNull: false,
+        defaultValue: Sequelize.NOW,
+      },
+
+      updated_at: {
+        type: Sequelize.DATE,
+        allowNull: false,
+        defaultValue: Sequelize.NOW,  
       },
 
     });
-
   },
 
   async down (queryInterface) {
-    return queryInterface.dropAllTables('alunos');
+    return queryInterface.dropTable('alunos');
   }
 };
