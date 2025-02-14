@@ -1,4 +1,5 @@
 import { createGlobalStyle, styled } from "styled-components";
+import { primaryColor,primaryDarkColor } from "../config/colors";
 
 // Estilos globais
 const GlobalStyle = createGlobalStyle`
@@ -10,7 +11,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: sans-serif;
+    background: ${primaryDarkColor};
+    color: ${primaryDarkColor};
   }
 
   html, body, #root {
@@ -19,14 +22,24 @@ const GlobalStyle = createGlobalStyle`
 
   button {
     cursor: pointer;
+    background: ${primaryColor};
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 700;
   }
 
   a {
     text-decoration: none;
+    color: ${primaryColor};
   }
 
   ul {
     list-style: none;
+  }
+  p{
+    font-size: 3rem;
   }
 `;
 

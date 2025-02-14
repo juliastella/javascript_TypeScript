@@ -1,12 +1,17 @@
 import React from "react";
-import Login from './pages/Login';
+
+import Header from "./components/Header";
 import GlobalStyles from "./styles/GlobalStyles";
+
+import Routes from "./routes";
+
 
 function App() {
   return (
     <>
-      <GlobalStyles />
-      <Login />
+      <GlobalStyles /> {/* Renderize o GlobalStyles primeiro */}
+      <Header />
+      <Routes />
     </>
   );
 }

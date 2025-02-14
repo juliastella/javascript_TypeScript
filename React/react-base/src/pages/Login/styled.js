@@ -7,7 +7,4 @@ export const Title = styled.h1`
     font-size: 12pt;
     margin-left: 15px;
   }
-  p{
-    font-size: 30px;
-  }
 `;
