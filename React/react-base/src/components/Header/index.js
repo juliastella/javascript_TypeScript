@@ -7,13 +7,13 @@ import { Nav } from './styled';
 export default function Header() {
   return (
     <Nav>
-      <Link href='/'>
+      <Link to='/home'>
         <FaHome size={24} />
       </Link>
-      <Link href='/login'>
+      <Link to='/login'>
         <FaSignInAlt size={24} />
       </Link>
-      <Link href='/profile'>
+      <Link to='/profile'>
         <FaUserAlt size={24} />
       </Link>
     </Nav>
